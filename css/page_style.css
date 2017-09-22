@@ -1,0 +1,943 @@
+/* MAIN */
+.product_head {
+    position: relative;
+    font-size: 0;
+}
+
+.product_banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .4s ease-out;
+}
+
+.product_banner.active {
+    position: relative;
+    opacity: 1;
+}
+
+.product_head_desc_text, .product_head_desc_title {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.product_head_desc {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.product_head_desc_text {
+    font-size: 1.4rem;
+    margin-top: .2rem;
+}
+
+.product_head_desc_title {
+    font-size: 10rem;
+    font-family: Gotham Pro;
+    letter-spacing: -0.5rem;
+    line-height: 5rem;
+}
+
+.page_block {
+    padding: 5rem 4.5rem;
+}
+
+.page_block.light-grey {
+    background: #F8F8F8;
+}
+
+.page_block.light-dark-grey {
+    background: #F2F1EF;
+}
+
+.page_title {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Thin';
+}
+
+.page_text {
+    margin-top: 1rem;
+    line-height: 1.2rem;
+}
+
+.page_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* CAVIAR */
+
+.caviar_materials .page_flex {
+    margin-top: 5rem;
+}
+
+.caviar_materials .page_flex_item:first-child {
+    flex: 0 1 42%;
+}
+
+.caviar_materials .page_flex_item:last-child {
+    position: relative;
+    flex: 1 0;
+    margin-left: 20px;
+}
+
+.materials_desc {
+    position: absolute;
+    top: 22%;
+    left: 78%;
+    width: 140px;
+    line-height: 1.2rem;
+}
+
+.caviar_materials .page_text {
+    margin-top: 1.2rem;
+}
+
+.caviar_materials .page_title {
+    margin-bottom: 2.9rem;
+}
+
+.materials_desc:first-of-type {
+    top: 5%;
+    left: 63%;
+}
+
+.materials_desc:last-of-type {
+    top: 46%;
+    left: 83%;
+}
+
+.materials_img {
+    max-width: 81%;
+}
+
+.caviar_individual .page_flex_item:first-child {
+    flex: 0 1 41.7%;
+}
+
+.caviar_individual .page_flex_item:last-child {
+    position: relative;
+    flex: 1 0;
+    margin-left: 20px;
+    max-width: 440px;
+}
+
+.caviar_individual .page_title {
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.caviar_individual button {
+    border: 1px solid #FEA201;
+    background: none;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 0.98rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: background .3s ease;
+    margin-top: 1.5rem;
+}
+
+.caviar_individual button:hover {
+    background: #FEA201;
+}
+
+.caviar_individual button:first-of-type {
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+}
+
+.caviar_individual .page_text:first-of-type {
+    margin-top: 0;
+}
+
+.caviar_warranty.page_block {
+    background: #f2f1ef !important;
+    padding-bottom: 10.3rem;
+}
+
+.caviar_warranty .page_text {
+    max-width: 900px;
+}
+
+.warranty_list.page_flex {
+    margin-top: 2.6rem;
+    justify-content: space-between;
+    max-width: 920px;
+}
+
+.warranty_list .page_flex_item {
+    flex: 0 1 21%;
+    display: flex;
+    align-items: center;
+}
+
+.warranty_list .page_flex_item > span {
+    margin-left: 6%;
+}
+
+.caviar_design.page_block {
+    padding-top: 49px;
+}
+
+/* OUVRI */
+.ouvri .product_head_desc_text, .ouvri .product_head_desc_title {
+    top: 26%;
+}
+
+.ouvri .product_head_desc_title {
+    font-size: 9rem;
+    line-height: 4.6rem;
+}
+
+.ouvri_art.page_block {
+    padding-top: 7.3rem;
+}
+
+.ouvri_art .page_title {
+    margin-bottom: 3rem;
+}
+
+.ouvri_art .page_flex_item {
+    flex: 1 1;
+}
+
+.ouvri_art .page_flex_item:nth-of-type(2) {
+    font-size: 1.85rem;
+    font-family: 'Roboto Thin';
+    text-transform: uppercase;
+    line-height: 2.35rem;
+    margin: 0.6rem 1.6rem 0 2.5rem;
+    flex: 0 0 260px;
+}
+
+.ouvri_art .page_flex_item:nth-of-type(2) span {
+    font-size: 3.5rem;
+    color: #dcc25f;
+    font-family: 'Roboto Bold';
+    display: inline-block;
+    margin-top: -1rem;
+}
+
+.ouvri_materials img {
+    margin-top: 2rem;
+}
+
+.ouvri_materials.page_block {
+    padding-top: 14px;
+}
+
+/* PRODUCTS */
+.main {
+    color: #fff;
+    background: #000;
+    padding-top: 4.3rem;
+}
+.main .product_head > img {
+    position: absolute;
+    top: 0;
+}
+
+.main img.product_head_bg {
+    position: relative;
+    left: 6.5%;
+    filter: brightness(.6);
+    max-width: 92.5%;
+    transition: filter .5s ease;
+}
+.main .product_head:hover img.product_head_bg {
+    filter: brightness(1);
+}
+
+.main img.product_head_text_back {
+    right: 8%;
+}
+
+.main .product_head_desc {
+    right: 12%;
+    width: auto;
+    height: auto;
+    top: 35%;
+}
+
+.main .product_head_desc_title {
+    font-size: 4.4rem;
+    line-height: 4.9rem;
+    top: 0;
+    transform: translateY(0%);
+    font-family: 'Roboto Thin';
+    letter-spacing: 0;
+}
+
+.main .product_head_desc_text {
+    font-size: 3.6rem;
+    margin: 0;
+    top: 0;
+    transform: translateY(0%);
+    font-family: 'Roboto Thin';
+}
+
+.main .product_head {
+    overflow: hidden;
+}
+
+.main .product_head_crown {
+    margin-bottom: 2rem;
+}
+.main .main_luxury.page_block {
+    max-width: 58%;
+    margin: 0 auto;
+    transform: translateX(2rem) translateY(.4rem);
+}
+
+.main .page_text {
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    line-height: 1.5rem;
+    font-family: 'Roboto Thin';
+}
+
+.main .luxury_item {
+    text-align: center;
+    padding: 17% 11%;
+    border: 1px solid #372B05;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    transition: border .25s ease;
+}
+
+.main .luxury_item:hover, .main .luxury_item.active {
+    border: 1px solid #E5C357;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.main .luxury.page_flex {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5rem 0 3.5rem;
+    max-width: 95%;
+}
+
+.main .luxury_item.logo_ouvri {
+    margin-top: 7rem;
+}
+
+.main .luxury_text {
+    margin-top: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.main .luxury_text.active {
+    height: auto;
+    opacity: 1;
+    transition: opacity .25s ease;
+}
+
+.main .main_btn {
+    margin-top: 4rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.main .main_btn a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.9rem 2rem;
+    border-top: 2px solid rgb(241, 204, 87);
+    border-bottom: 2px solid rgb(241, 204, 87);
+    border-right: 1px solid rgb(241, 204, 87);
+    position: relative;
+    max-width: 65%;
+}
+
+.main .main_btn a:before, .main .main_btn a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    transition: height .5s ease;
+    border-left: 1px solid rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.main .main_btn a:before {
+    left: 0;
+    border-left: 1px solid rgb(241, 204, 87);
+    height: 0;
+}
+
+.main .main_btn a:after {
+    right: -1px;
+    height: 100%;
+}
+
+.main .main_btn a:hover:before {
+    height: 100%;
+}
+
+.main .main_btn a:hover:after {
+    height: 0;
+}
+
+/* PRIVILEGES */
+.privileges.main {
+    background: #141414;
+    overflow: hidden;
+}
+.privileges.main .product_head_desc_text {
+    font-size: 2.9rem;
+}
+
+.privileges.main .page_title {
+    display: block;
+    font-size: 6.25rem;
+    text-align: center;
+    line-height: initial;
+    margin-bottom: 0 !important;
+}
+
+.privileges.main .page_subtitle {
+    font-size: 2.4rem;
+    font-family: 'Roboto Thin';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3.4rem;
+}
+
+.privileges.main .page_subtitle + .page_text, .privileges.main .page_title + .page_text {
+    text-align: center;
+}
+.privileges.main .page_block.cert_desc {
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.privileges.main .cert_head {
+    position: relative;
+}
+
+.privileges.main .cert_head_desc {
+    position: absolute;
+    top: 22%;
+    left: 53%;
+    text-align: left;
+    max-width: 39%;
+    color: #000;
+}
+
+.privileges.main .cert_head_desc h3 {
+    font-size: 2.7rem;
+    font-family: 'Roboto Thin';
+    text-transform: uppercase;
+    line-height: 3.2rem;
+}
+
+.privileges.main .page_block.main_privileges {
+    padding-top: 7rem;
+}
+
+.privileges.main .cert_list {
+    padding-top: 0;
+    font-family: 'Roboto Thin';
+    position: relative;
+}
+
+
+/* CERT */
+
+.cert_inner {
+    max-width: 700px;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cert_item {
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    min-height: 306px;
+    text-align: center;
+    display: block;
+    vertical-align: top;
+    z-index: 1;
+}
+.cert_item.gold {
+    color: #000;
+    background: rgb(255,214,74); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,214,74,1) 0%, rgba(219,152,1,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,214,74,1) 0%,rgba(219,152,1,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,214,74,1) 0%,rgba(219,152,1,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd64a', endColorstr='#db9801',GradientType=0 );
+    margin-top: -128px;
+}
+.cert_item.black {
+    color: #fff;
+    background: #141414; /* Old browsers */
+    background: -moz-linear-gradient(top, #141414 0%, #000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #141414 0%,#000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #141414 0%,#000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#000',GradientType=0 );
+    margin-left: auto;
+    margin-top: -178px;
+    right: 33px;
+}
+
+.cert_item .cert_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.cert_item > .cert_title {
+    font-size: 6rem;
+    transform: translateX(0) translateY(110%);
+    display: inline-block;
+}
+.cert_item.gold > .cert_title {
+    color: #fff;
+}
+
+.cert_footer {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.cert_item .page_flex {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: .3rem;
+}
+
+.cert_item .page_flex_item {
+    flex: 1 1 150px;
+    max-width: 165px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.cert_item .page_flex_item:not(:nth-of-type(3n + 1)) {
+    margin-left: 60px;
+}
+
+.cert_item_title {
+    font-family: 'Roboto Medium';
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.cert_item .cert_item_icon {
+    max-width: 55px;
+    display: block;
+}
+
+.cert_item_icon.smartphone {
+    flex: 0 0 27px;
+}
+
+.cert_item_icon.protection {
+    flex: 0 0 41px;
+}
+
+.cert_item_icon.call {
+    flex: 0 0 43px;
+}
+
+.cert_item_icon.repair {
+    flex: 0 0 55px;
+}
+
+.cert_item_icon.home {
+    flex: 0 0 44px;
+}
+
+.cert_item_icon + .cert_item_text {
+    margin-left: 8px;
+}
+
+.cert_item .page_flex_item.protection {
+    flex: 0 0 170px;
+    max-width: 170px;
+    margin-left: 50px !important;
+}
+
+.cert_item_icon.text {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'Roboto Regular';
+}
+
+.cert_item .page_flex + .cert_title {
+    margin-top: 5.3rem;
+}
+
+.cert_item.active {
+    max-width: 695px;
+    z-index: 2;
+}
+
+.cert_item.active > .cert_title {
+    transform: translateX(-112.5%) translateY(57%);
+    font-size: 4.4rem;
+    text-align: left;
+}
+
+.cert_item.gold.active > .cert_title {
+    color: #000;
+}
+
+.cert_item.active .cert_inner {
+    max-width: 595px;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    padding: 14% 6% 10% 9%;
+}
+
+.cert_item.active .cert_footer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1200px) {
+    .ouvri_art .page_flex_item:nth-of-type(2) {
+        margin: 0.6rem 0 0 2rem;
+    }
+    .main .product_head_desc {
+        top: 17.2vw;
+        right: 9%;
+    }
+    .main .main_luxury.page_block {
+        max-width: 100%;
+        transform: none;
+    }
+    .main .luxury.page_flex {
+        max-width: 70%;
+        margin: 5rem auto 3rem;
+    }
+    .main .luxury_item {
+        padding: 14% 8%;
+    }
+    .main .luxury_item.logo_caviar {
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+
+    .page_block {
+        padding: 5rem 2.5rem;
+    }
+
+    .page_title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .caviar .product_head_desc_title {
+        font-size: 8rem;
+        line-height: 4.5rem;
+    }
+
+    .materials_img {
+        max-width: 70%;
+    }
+
+    .materials_desc {
+        position: absolute;
+        top: 22%;
+        left: 67%;
+        width: auto;
+        line-height: 1.2rem;
+    }
+
+    .materials_desc:first-of-type {
+        top: 5%;
+        left: 55%;
+    }
+
+    .materials_desc:last-of-type {
+        top: 46%;
+        left: 73%;
+    }
+
+    .ouvri_art .page_flex_item:nth-of-type(2) {
+        flex: 0 0 260px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page_block {
+        padding: 3rem 1.5rem;
+    }
+
+    .warranty_list.page_flex {
+        flex-wrap: wrap;
+    }
+
+    .warranty_list .page_flex_item {
+        flex: 0 1 45%;
+    }
+
+    .caviar_materials.page_block {
+        padding-top: 4rem;
+    }
+
+    .ouvri_art.page_block {
+        padding-top: 4rem;
+    }
+    .main .product_head_desc_title {
+        font-size: 3.1rem;
+        line-height: 3.5rem;
+    }
+    .main .product_head_desc_text {
+        font-size: 2.6rem;
+    }
+    .main .product_head_crown {
+        margin-bottom: 1.5rem;
+    }
+    .main .product_head_desc {
+        top: 45%;
+        transform: translateY(-50%);
+    }
+    .main img.product_head_bg {
+        left: -2vw;
+        max-width: 100%;
+    }
+    .product.main img.product_head_bg {
+        top: -5vw;
+    }
+    .privileges.main .product_head_desc_text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .main_btn a:before {
+        height: 100% !important;
+    }
+
+    .main .main_btn a:after {
+        height: 0 !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .caviar_individual button {
+        margin: 1.5rem auto 0;
+        display: block;
+    }
+
+    .caviar_individual button:first-of-type {
+        margin-right: auto;
+    }
+
+    .privileges.main .page_title {
+        font-size: 13vw;
+    }
+
+    .privileges.main .page_subtitle {
+        font-size: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .privileges.main .page_block.main_privileges {
+        padding-top: 3rem;
+    }
+
+    .privileges.main .page_subtitle + .page_text, .privileges.main .page_title + .page_text {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .privileges.main .cert_head_desc {
+        top: 35%
+    }
+
+    .privileges.main .cert_head_desc h3 {
+        font-size: 5.3vw;
+        line-height: initial;
+    }
+
+    .privileges.main .cert_head_desc .page_text {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .caviar_materials .page_flex_item:first-child {
+        flex: 0 1 100%;
+    }
+
+    .caviar_materials .page_flex {
+        flex-wrap: wrap;
+    }
+
+    .caviar_materials .page_flex_item:last-child {
+        margin-left: 0;
+        flex: 1 0 100%;
+        margin-top: 3rem;
+    }
+
+    .caviar_individual .page_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caviar_individual .page_flex_item:first-child {
+        flex: 0 1 80%;
+        text-align: center;
+    }
+
+    .caviar_individual .page_flex_item:last-child {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .ouvri_art .page_flex {
+        flex-wrap: wrap;
+    }
+
+    .ouvri_art .page_flex_item {
+        flex: 1 1 100%;
+    }
+
+    .ouvri_art .page_flex_item:nth-of-type(2) {
+        margin: 2rem auto 0;
+    }
+
+    .ouvri .product_head_desc_title {
+        font-size: 6rem;
+        line-height: 3rem;
+    }
+
+    .ouvri .product_head_desc_text {
+        font-size: 1.2rem;
+    }
+    .main .luxury.page_flex {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main .product_head_crown {
+        margin-bottom: 1rem;
+        max-width: 65%;
+    }
+    .main .product_head_desc_title {
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+    }
+    .main .product_head_desc_text {
+        font-size: 2rem;
+    }
+    .main .luxury_item {
+        padding: 14% 5%;
+    }
+    .privileges.main .product_head_desc_text {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 13px;
+    }
+
+    .caviar .product_head_desc_title {
+        font-size: 20vw;
+        line-height: 10vw;
+    }
+
+    .caviar .product_head_desc_text {
+        font-size: 3.3vw;
+    }
+
+    .caviar .product_head_desc_text, .caviar .product_head_desc_title {
+        top: 45%;
+    }
+
+    .ouvri_art .page_flex_item:nth-of-type(2) {
+        flex: 0 0 235px;
+    }
+
+    .ouvri .product_head_desc_title {
+        font-size: 17vw;
+        line-height: 9vw;
+    }
+
+    .ouvri .product_head_desc_text {
+        font-size: 3.5vw;
+    }
+
+    .main .product_head_desc_title {
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+
+    .main .product_head_desc_text {
+        font-size: 5.8vw;
+    }
+
+    .main .product_head_crown {
+        max-width: 20vw;
+    }
+    .main .luxury.page_flex {
+        max-width: 100%;
+    }
+    .main .luxury_item.logo_caviar {
+        margin-right: 5%;
+    }
+    .privileges.main .product_head_desc_text {
+        font-size: 4.6vw;
+    }
+    .privileges.main .page_block.main_privileges {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .warranty_list .page_flex_item {
+        flex: 0 1 100%;
+    }
+
+    .warranty_list .page_flex_item:not(:first-child) {
+        margin-top: 2rem;
+    }
+}
