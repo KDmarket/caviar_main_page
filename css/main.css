@@ -58,14 +58,14 @@ table {
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Thin';
     src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto/Robotothin.woff2') format('woff2'), url('../fonts/roboto/Robotothin.woff') format('woff'), url('../fonts/roboto/Robotothin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Light';
     src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/roboto/Robotolight.woff2') format('woff2'), url('../fonts/roboto/Robotolight.woff') format('woff'), url('../fonts/roboto/Robotolight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -103,7 +103,7 @@ main {
 }
 
 .page {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
     font-weight: 300;
     max-width: 1200px;
     width: 100%;
